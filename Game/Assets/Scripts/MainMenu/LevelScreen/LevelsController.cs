@@ -11,27 +11,6 @@ using Vector3 = UnityEngine.Vector3;
 
 public class LevelsController : MonoBehaviour
 {
-    public void GoToLevel()
-    {
-        if (PlayerPrefs.GetInt("Energy") <= 0) return;
-        var level = int.Parse(EventSystem.current.currentSelectedGameObject.name);
-        Debug.Log(level);
-        PlayerPrefs.SetInt("Energy", PlayerPrefs.GetInt("Energy") - 1);
-        PlayerPrefs.SetInt("Level", level);
-        LoadGameScene(level);
-    }
-
-    private static void LoadGameScene(int level)
-    {
-        if (level < 21)
-            SceneManager.LoadScene("3x3");
-        else if (level < 42)
-            SceneManager.LoadScene("4x4");
-        else
-            SceneManager.LoadScene("5x5");
-
-    }
-    
     private const float Speed = 50f;
     public TextMeshProUGUI _stage;
     public GameObject[] blocks;
@@ -98,6 +77,27 @@ public class LevelsController : MonoBehaviour
         _canMove = true;
         blocks[_blockCheck].transform.position = spawn;
         _preTarget = preTarget;
+    }
+    
+    private static void LoadGameScene(int level)
+    {
+        if (level < 21)
+            SceneManager.LoadScene("3x3");
+        else if (level < 42)
+            SceneManager.LoadScene("4x4");
+        else
+            SceneManager.LoadScene("5x5");
+
+    }
+    
+    public void GoToLevel()
+    {
+        if (PlayerPrefs.GetInt("Energy") <= 0) return;
+        var level = int.Parse(EventSystem.current.currentSelectedGameObject.name);
+        Debug.Log(level);
+        PlayerPrefs.SetInt("Energy", PlayerPrefs.GetInt("Energy") - 1);
+        PlayerPrefs.SetInt("Level", level);
+        LoadGameScene(level);
     }
     
     private void Move()

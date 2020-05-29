@@ -6,30 +6,42 @@ using System.Numerics;
 using TMPro;
 using UnityEditor;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using UnityEngine.Serialization;
 using Vector3 = UnityEngine.Vector3;
 
-public class LevelChooseController : MonoBehaviour
+public class MainMenuController : MonoBehaviour
 {
-    private const float Speed = 50f;
+    public Sprite x4On;
+    public Sprite x5On;
     public GameObject[] fields;
+    public TextMeshProUGUI fieldsName;
+    private const float Speed = 50f;
     private int _fieldCheck, _sum;
     private bool _canMove = false, _next = false, _status4X4 = false, _status5X5 = false;
     private readonly Vector3 _target = new Vector3(0f, 0f, 0f);
     private Vector3 _preTarget;
     private float _timer = 0f;
-    public TextMeshProUGUI fieldsName;
 
     private void Start()
     {
         _fieldCheck = PlayerPrefs.HasKey("LastFieldCheck") ? PlayerPrefs.GetInt("LastFieldCheck") : 0;
         fields[_fieldCheck].transform.position = _target;
+        if (StarsSavingSystem.Get(19) >= 1)
+        {
+            fields[1].GetComponent<Button>().interactable = true;
+            fields[1].GetComponent<Image>().sprite = x4On;
+        }
+
+        if (StarsSavingSystem.Get(40) < 1) return;
+        fields[2].GetComponent<Button>().interactable = true;
+        fields[2].GetComponent<Image>().sprite = x5On;
     }
 
     private void FixedUpdate()
     {
-        switch (_fieldCheck)
+        switch (_fieldCheck) // Change 
         {
             case 0:
                 fieldsName.text = "3x3";
