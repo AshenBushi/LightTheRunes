@@ -19,7 +19,7 @@ public class SaveData : MonoBehaviour
     private void Load()
     {
 #if UNITY_ANDROID && !UNITY_EDITOR
-        _path = Path.Combine(Application.presistentDataPath, "Save.json");
+        _path = Path.Combine(Application.persistentDataPath, "Save.json");
 #else
         _path = Path.Combine(Application.dataPath, "Save.json");
 #endif

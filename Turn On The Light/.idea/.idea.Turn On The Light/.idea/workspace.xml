@@ -30,6 +30,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Gameplay/FieldAndLevelSet.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../Game/Assets/Scripts/Gameplay/LevelSet.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Gameplay/EnergyBarSet.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Gameplay/PadController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/SaveData.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Gameplay/ProcessController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Win/ButtonsController.cs" root0="FORCE_HIGHLIGHTING" />
@@ -45,12 +46,12 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Gameplay/EnergyBarSet.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Gameplay/FieldAndLevelSet.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Win/WinMoneyAndStarController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/SaveData.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/EnergyAndMoneyController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Gameplay/ProcessController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/MainMenu/FieldsController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Win/ButtonsController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Gameplay/ButtonsController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/SaveData.cs" />
       </list>
     </option>
   </component>
@@ -93,7 +94,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1591684583817</updated>
-      <workItem from="1591684587475" duration="11415000" />
+      <workItem from="1591684587475" duration="12018000" />
+      <workItem from="1591710744937" duration="741000" />
     </task>
     <servers />
   </component>
@@ -107,7 +109,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
