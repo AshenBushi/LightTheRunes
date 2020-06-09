@@ -51,6 +51,13 @@ public class EnergyAndMoneyController : MonoBehaviour
     
     private void EnergyTimer()
     {
+        if (_energy == 30)
+        {
+            _saveData.save.energySave = 0;
+            _saveData.save.energyTimer = 0;
+            _saveData.SetDateTime(DateTime.UtcNow);
+            return;
+        }
         LoadData();
         _energyToRespond = 30 - _energy;
         

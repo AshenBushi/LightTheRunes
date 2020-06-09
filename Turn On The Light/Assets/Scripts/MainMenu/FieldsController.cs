@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace MainMenu
 {
@@ -44,7 +45,15 @@ namespace MainMenu
                     fieldsName.text = "5x5";
                     break;
             }
-
+            
+            if (_saveData.save.energy < 1)
+                for (var i = 0; i < 3; i++)
+                    fields[i].GetComponent<Button>().interactable = false;
+            else
+                for (var i = 0; i < 3; i++)
+                    fields[i].GetComponent<Button>().interactable = true;
+            
+            
             Move();
             
             if(_timer > 0)

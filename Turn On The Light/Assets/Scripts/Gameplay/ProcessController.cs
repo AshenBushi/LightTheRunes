@@ -15,8 +15,10 @@ namespace Gameplay
         [SerializeField] private List<PadController> pads; 
         public Slider energyBar; 
         public TextMeshProUGUI energy;
+        public Transform mainCamera;
+        private bool _pause = false;
         private float _value;
-        private int _money;
+        private int _money, _currentStars;
 
         private void Start()
         {
@@ -26,9 +28,16 @@ namespace Gameplay
 
         private void FixedUpdate()
         {
-            _value = energyBar.value - Time.deltaTime * 16.66f;
-            energy.text = Mathf.RoundToInt(_value / 1).ToString();
-            energyBar.value = _value;
+            if (!_pause)
+            {
+                _value = energyBar.value - Time.deltaTime * 16.66f;
+                energy.text = Mathf.RoundToInt(_value / 1).ToString();
+                energyBar.value = _value;
+            }
+
+            if (_value >= 0) return;
+            _pause = true;
+            mainCamera.position = new Vector3(21.6f, 0f, -10f);
         }
         public void CheckForWin()
         {
@@ -40,26 +49,32 @@ namespace Gameplay
             WinMenu();
         }
 
+        private readonly int[] _reward = {5, 10, 15};
+        
         private void WinMenu()
         {
             _money = 0;
             if(_value >= energyBar.maxValue * 0.75)
             {
                 for(var i = 0; i < 3; i++)
-                    _money += 10;
+                    _money += _reward[_saveData.save.currentLevel];
+                _currentStars = 3;
             }
             else
                 if(_value >= energyBar.maxValue * 0.4)
                 {
                     for(var i = 0; i < 2; i++)
-                        _money += 10;
+                        _money += _reward[_saveData.save.currentLevel];
+                    _currentStars = 2;
                 }
                 else
                 {
                     for(var i = 0; i < 1; i++)
-                        _money += 10;
+                        _money += _reward[_saveData.save.currentLevel];
+                    _currentStars = 1;
                 }
 
+            _saveData.save.levelStar[_saveData.save.currentLevel] = _currentStars;
             _saveData.save.winMoney = _money;
             _functions.ToScene("win");
         }

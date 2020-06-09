@@ -60,6 +60,7 @@ public class SaveData : MonoBehaviour
         save.date = DateTime.UtcNow.ToString("u", CultureInfo.InvariantCulture);
         save.currentLevel = 0;
         save.fieldPos = 0;
+        save.levelStar = new int[3];
     }
     
     public void SetDateTime(DateTime value)
@@ -91,5 +92,6 @@ public class Data
     public bool sound;
     public string date;
     public int currentLevel;
+    public int[] levelStar;
     public int fieldPos;
 }
