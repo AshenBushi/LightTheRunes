@@ -16,7 +16,6 @@ namespace Gameplay
         public Slider energyBar; 
         public TextMeshProUGUI energy;
         public Transform mainCamera;
-        private bool _pause = false;
         private float _value;
         private int _money, _currentStars;
 
@@ -24,11 +23,12 @@ namespace Gameplay
         {
             _saveData = FindObjectOfType<SaveData>();
             _functions = FindObjectOfType<Functions>();
+            _saveData.save.pause = false;
         }
 
         private void FixedUpdate()
         {
-            if (!_pause)
+            if (!_saveData.save.pause)
             {
                 _value = energyBar.value - Time.deltaTime * 16.66f;
                 energy.text = Mathf.RoundToInt(_value / 1).ToString();
@@ -36,7 +36,7 @@ namespace Gameplay
             }
 
             if (_value >= 0) return;
-            _pause = true;
+            _saveData.save.pause = true;
             mainCamera.position = new Vector3(21.6f, 0f, -10f);
         }
         public void CheckForWin()
@@ -76,8 +76,7 @@ namespace Gameplay
 
             _saveData.save.levelStar[_saveData.save.currentLevel] = _currentStars;
             _saveData.save.winMoney = _money;
-            _functions.ToScene("win");
+            _functions.ToScene("Win");
         }
-
     }
 }

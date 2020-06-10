@@ -26,8 +26,7 @@ public class WinMoneyAndStarController : MonoBehaviour
         {
             stars[i].sprite = starOn;
         }
-
-        _saveData.save.winMoney = 0;
+        
         _saveData.save.levelStar[_saveData.save.currentLevel] = 0;
     }
 

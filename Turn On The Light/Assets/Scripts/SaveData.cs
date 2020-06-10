@@ -57,10 +57,13 @@ public class SaveData : MonoBehaviour
         save.energyTimer = 0;
         save.money = 0;
         save.sound = true;
+        save.music = false;
         save.date = DateTime.UtcNow.ToString("u", CultureInfo.InvariantCulture);
         save.currentLevel = 0;
         save.fieldPos = 0;
         save.levelStar = new int[3];
+        save.pause = false;
+        save.testing = true;
     }
     
     public void SetDateTime(DateTime value)
@@ -90,8 +93,11 @@ public class Data
     public int energyTimer;
     public int energySave;
     public bool sound;
+    public bool music;
     public string date;
     public int currentLevel;
     public int[] levelStar;
     public int fieldPos;
+    public bool pause;
+    public bool testing;
 }

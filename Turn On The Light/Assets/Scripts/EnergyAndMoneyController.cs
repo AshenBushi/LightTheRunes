@@ -8,6 +8,8 @@ using UnityEngine.Serialization;
 public class EnergyAndMoneyController : MonoBehaviour
 {
     private SaveData _saveData;
+    private Functions _functions;
+    
     public TextMeshProUGUI energy;
     public TextMeshProUGUI money;
     public TextMeshProUGUI energyTimer;
@@ -17,6 +19,8 @@ public class EnergyAndMoneyController : MonoBehaviour
     private void Start()
     {
         _saveData = FindObjectOfType<SaveData>();
+        _functions = FindObjectOfType<Functions>();
+        
         _energy = _saveData.save.energy;
         _money = _saveData.save.money;
         energy.text = _energy.ToString();
@@ -25,7 +29,7 @@ public class EnergyAndMoneyController : MonoBehaviour
     
     private void FixedUpdate()
     {
-        money.text = _money.ToString();
+        money.text = _saveData.save.money.ToString();
         energy.text = _energy.ToString();
         EnergyTimer();
     }
@@ -88,5 +92,10 @@ public class EnergyAndMoneyController : MonoBehaviour
 
         fake.SetActive((_energyTimer - 59 * (_energyToRespond - 1)) < 10);
         SaveData();
+    }
+
+    public void Settings()
+    {
+        _functions.ToScene("Settings");
     }
 }

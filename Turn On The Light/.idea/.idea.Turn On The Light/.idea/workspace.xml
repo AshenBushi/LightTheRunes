@@ -26,17 +26,23 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/EnergyAndMoneyController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ads@3.4.4/Runtime/Monetization/MonetizationPlatform.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../Game/Assets/Scripts/Gameplay/ProcessController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Gameplay/FieldAndLevelSet.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../Game/Assets/Scripts/Gameplay/LevelSet.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Gameplay/EnergyBarSet.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Gameplay/PadController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/SaveData.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Functions.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Ads/EnergyAndMoneyAds.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Gameplay/ProcessController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Win/ButtonsController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Gameplay/ButtonsController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Ads/DoubleCoinAds.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Ads/ContinueAds.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Win/WinMoneyAndStarController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/MainMenu/FieldsController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Settings/ButtonController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../Game/Assets/Scripts/WinMenu/WinMenuControll.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -45,13 +51,23 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Gameplay/RandomFields.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Gameplay/EnergyBarSet.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Gameplay/FieldAndLevelSet.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Win/WinMoneyAndStarController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/EnergyAndMoneyController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Gameplay/ProcessController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/MainMenu/FieldsController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Win/ButtonsController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Gameplay/ButtonsController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/MainMenu/ButtonController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Functions.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Settings/ButtonController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/EnergyAndMoneyController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Gameplay/ProcessController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SaveData.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Gameplay/ContinueAds.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/AdsController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Win/WinMoneyAndStarController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Win/DoubleCoinAds.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Ads/AdsController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Ads/ContinueAds.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Ads/DoubleCoinAds.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Ads/EnergyAndMoneyAds.cs" />
       </list>
     </option>
   </component>
@@ -96,6 +112,8 @@
       <updated>1591684583817</updated>
       <workItem from="1591684587475" duration="12018000" />
       <workItem from="1591710744937" duration="741000" />
+      <workItem from="1591766572674" duration="7044000" />
+      <workItem from="1591788786857" duration="26000" />
     </task>
     <servers />
   </component>
