@@ -16,7 +16,7 @@ namespace Gameplay
         public PadController[] pads3X3;
         public PadController[] pads4X4;
         public PadController[] pads5X5;
-        public Sprite padOn;
+        public Sprite[] padOn;
         private int _currentField;
         private int[] _randomPads;
 
@@ -34,32 +34,32 @@ namespace Gameplay
             switch (_currentField)
             {
                 case 0 :
-                    _randomPads = RandomLevel(4, 9);
+                    _randomPads = RandomLevel(6, 9);
 
                     foreach (var t in _randomPads)
                     {
                         pads3X3[t].isTurn = !pads3X3[t].isTurn;
-                        pads3X3[t].GetComponent<SpriteRenderer>().sprite = padOn;
+                        pads3X3[t].GetComponent<SpriteRenderer>().sprite = padOn[0];
                     }
                     break;
                     
                 case 1 :
-                    _randomPads = RandomLevel(6, 16);
+                    _randomPads = RandomLevel(8, 16);
 
                     foreach (var t in _randomPads)
                     {
                         pads4X4[t].isTurn = !pads4X4[t].isTurn;
-                        pads4X4[t].GetComponent<SpriteRenderer>().sprite = padOn;
+                        pads4X4[t].GetComponent<SpriteRenderer>().sprite = padOn[1];
                     }
                     break;
                 
                 case 2 :
-                    _randomPads = RandomLevel(8, 25);
+                    _randomPads = RandomLevel(10, 25);
 
                     foreach (var t in _randomPads)
                     {
                         pads5X5[t].isTurn = !pads5X5[t].isTurn;
-                        pads5X5[t].GetComponent<SpriteRenderer>().sprite = padOn;
+                        pads5X5[t].GetComponent<SpriteRenderer>().sprite = padOn[2];
                     }
                     break;
             }

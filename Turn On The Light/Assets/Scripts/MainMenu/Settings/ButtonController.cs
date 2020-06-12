@@ -12,6 +12,7 @@ public class ButtonController : MonoBehaviour
     public Image[] buttons;
     public Sprite buttonOn;
     public Sprite buttonOff;
+    public GameObject settingsPanel;
 
     private void Start()
     {
@@ -27,7 +28,12 @@ public class ButtonController : MonoBehaviour
 
     public void Exit()
     {
-        _functions.ToScene("MainMenu");
+        settingsPanel.SetActive(false);
+    }
+
+    public void Settings()
+    {
+        settingsPanel.SetActive(true);
     }
     
     public void MusicChange()

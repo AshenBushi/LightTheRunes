@@ -12,7 +12,8 @@ public class EnergyAndMoneyController : MonoBehaviour
     
     public TextMeshProUGUI energy;
     public TextMeshProUGUI money;
-    public TextMeshProUGUI energyTimer;
+    public TextMeshProUGUI secondsTimer;
+    public TextMeshProUGUI minuteTimer;
     public GameObject fake;
     private int _energy, _money;
 
@@ -55,24 +56,21 @@ public class EnergyAndMoneyController : MonoBehaviour
     
     private void EnergyTimer()
     {
-        if (_energy == 30)
-        {
-            _saveData.save.energySave = 0;
-            _saveData.save.energyTimer = 0;
-            _saveData.SetDateTime(DateTime.UtcNow);
-            return;
-        }
         LoadData();
         _energyToRespond = 30 - _energy;
         
         if (_energyToRespond <= 0)
         {
+            _saveData.save.energySave = 0;
+            _saveData.save.energyTimer = 0;
+            _saveData.SetDateTime(DateTime.UtcNow);
             fake.SetActive(true);
-            energyTimer.text = 0.ToString();
+            secondsTimer.text = 0.ToString();
+            minuteTimer.text = "0";
             return;
         }
         
-        _energyTimer += 59 * (_energyToRespond - _energySave);
+        _energyTimer += 120 * (_energyToRespond - _energySave);
         _energySave = _energyToRespond;
 
         var secondsPassed = (int) (DateTime.UtcNow - (_saveData.GetDateTime(DateTime.UtcNow))).TotalSeconds;
@@ -81,21 +79,25 @@ public class EnergyAndMoneyController : MonoBehaviour
         {
             _energyTimer -= secondsPassed;
             
-            if (_energyTimer <= 59 * (_energyToRespond - 1))
+            if (_energyTimer <= 120 * (_energyToRespond - 1))
             {
                 _energy++;
                 _energySave--;
             }
         }
-        
-        energyTimer.text = (_energyTimer - 59 * (_energyToRespond - 1)).ToString();
 
-        fake.SetActive((_energyTimer - 59 * (_energyToRespond - 1)) < 10);
+        if (_energyTimer > 59)
+        {
+            secondsTimer.text = (_energyTimer % 60).ToString();
+            minuteTimer.text = ((_energyTimer / 60) % 2).ToString();
+        }
+        else
+        {
+            secondsTimer.text = _energyTimer.ToString();
+            minuteTimer.text = "0";
+        }
+
+        fake.SetActive((_energyTimer % 60) < 10);
         SaveData();
-    }
-
-    public void Settings()
-    {
-        _functions.ToScene("Settings");
     }
 }

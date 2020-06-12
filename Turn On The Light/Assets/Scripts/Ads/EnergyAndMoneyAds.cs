@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Monetization;
+using UnityEngine.Serialization;
 using static UnityEngine.Monetization.Monetization;
 using ShowResult = UnityEngine.Monetization.ShowResult;
 
@@ -16,6 +17,8 @@ public class EnergyAndMoneyAds : MonoBehaviour
     
     private SaveData _saveData;
     private Functions _functions;
+
+    public GameObject energyAdPanel;
     
     private void Start()
     {
@@ -25,8 +28,21 @@ public class EnergyAndMoneyAds : MonoBehaviour
         _functions = FindObjectOfType<Functions>();
     }
 
-    public void AddEnergy()
+    public void OpenEnergyPanel()
     {
+        _saveData.save.pause = true;
+        energyAdPanel.SetActive(true);
+    }
+    
+    public void Exit()
+    {
+        _saveData.save.pause = false;
+        energyAdPanel.SetActive(false);
+    }
+    
+    public void AdEnergy()
+    {
+        if (_saveData.save.energy >= 30) return;
         if (!IsReady("rewardedVideo")) return;
         _saveData.save.pause = true;
         var options = new ShowAdCallbacks {finishCallback = EnergyShowResult};
@@ -46,6 +62,19 @@ public class EnergyAndMoneyAds : MonoBehaviour
         else
         if (result == ShowResult.Failed) {}
         _saveData.save.pause = false;
+        energyAdPanel.SetActive(false);
+    }
+
+    public void BuyEnergy()
+    {
+        if (_saveData.save.money < 200 || _saveData.save.energy >= 30) return;
+        _saveData.save.money -= 200;
+        if(_saveData.save.energy <= 20)
+            _saveData.save.energy += 10;
+        else
+            _saveData.save.energy = 30;
+        
+        energyAdPanel.SetActive(false);
     }
     
     public void AddMoney()

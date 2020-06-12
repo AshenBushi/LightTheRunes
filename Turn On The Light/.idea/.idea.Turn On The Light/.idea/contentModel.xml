@@ -15,19 +15,21 @@
           <e p="EnergyAndMoneyController.cs" t="Include" />
           <e p="Functions.cs" t="Include" />
           <e p="Gameplay" t="Include">
-            <e p="ButtonsController.cs" t="Include" />
             <e p="EnergyBarSet.cs" t="Include" />
             <e p="FieldAndLevelSet.cs" t="Include" />
+            <e p="LoseAndPauseScreen" t="Include">
+              <e p="ButtonsController.cs" t="Include" />
+            </e>
             <e p="PadController.cs" t="Include" />
             <e p="ProcessController.cs" t="Include" />
           </e>
           <e p="MainMenu" t="Include">
             <e p="FieldsController.cs" t="Include" />
+            <e p="Settings" t="Include">
+              <e p="ButtonController.cs" t="Include" />
+            </e>
           </e>
           <e p="SaveData.cs" t="Include" />
-          <e p="Settings" t="Include">
-            <e p="ButtonController.cs" t="Include" />
-          </e>
           <e p="Test.cs" t="Include" />
           <e p="Win" t="Include">
             <e p="ButtonsController.cs" t="Include" />

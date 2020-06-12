@@ -17,6 +17,12 @@ TextureImporter:
   - first:
       213: 3075976590441477488
     second: PlayFieldBackground_4
+  - first:
+      213: -1332703656440398094
+    second: PlayFieldBackground_0
+  - first:
+      213: -2523638358731262768
+    second: PlayFieldBackground_3
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -114,33 +120,12 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: PlayFieldBackground_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 802
-        height: 802
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2580e2482192211d0800000000000000
-      internalID: -3381595210698061742
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: PlayFieldBackground_1
       rect:
         serializedVersion: 2
-        x: 0
-        y: 907
-        width: 802
+        x: 956
+        y: 871
+        width: 801
         height: 801
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -159,9 +144,9 @@ TextureImporter:
       name: PlayFieldBackground_2
       rect:
         serializedVersion: 2
-        x: 855
-        y: 907
-        width: 803
+        x: 1883
+        y: 870
+        width: 801
         height: 801
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -177,34 +162,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayFieldBackground_3
-      rect:
-        serializedVersion: 2
-        x: 856
-        y: 0
-        width: 818
-        height: 802
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 213cc3a9699f79500800000000000000
-      internalID: 403065116901032722
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: PlayFieldBackground_4
       rect:
         serializedVersion: 2
-        x: 1728
-        y: 910
-        width: 802
-        height: 796
+        x: 1888
+        y: 0
+        width: 801
+        height: 801
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -214,6 +178,48 @@ TextureImporter:
       bones: []
       spriteID: 0757eaa696010ba20800000000000000
       internalID: 3075976590441477488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayFieldBackground_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 866
+        width: 801
+        height: 801
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fe710fd519418de0800000000000000
+      internalID: -1332703656440398094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayFieldBackground_3
+      rect:
+        serializedVersion: 2
+        x: 961
+        y: 16
+        width: 801
+        height: 801
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d4f546984c3afcd0800000000000000
+      internalID: -2523638358731262768
       vertices: []
       indices: 
       edges: []
