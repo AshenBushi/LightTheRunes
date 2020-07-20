@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ContentModelStore">
     <e p="C:\Users\ashen\.Rider2019.3\system\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\ashen\.Rider2019.3\system\resharper-host\local\Transient\ReSharperHost\v193\SolutionCaches\_Light The Runes.-1048372539.00" t="ExcludeRecursive" />
-    <e p="C:\Users\ashen\Desktop\Unity\Light The Runes\Light The Runes" t="IncludeRecursive">
+    <e p="C:\Users\ashen\.Rider2019.3\system\resharper-host\local\Transient\ReSharperHost\v193\SolutionCaches\_Light The Runes.1199768353.00" t="ExcludeRecursive" />
+    <e p="C:\Users\ashen\Desktop\Unity\Light The Runes" t="IncludeRecursive">
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="Scripts" t="Include">
@@ -15,30 +15,41 @@
           <e p="EnergyAndMoneyController.cs" t="Include" />
           <e p="Functions.cs" t="Include" />
           <e p="Gameplay" t="Include">
-            <e p="EnergyBarSet.cs" t="Include" />
-            <e p="FieldAndLevelSet.cs" t="Include" />
-            <e p="LoseAndPauseScreen" t="Include">
-              <e p="ButtonsController.cs" t="Include" />
+            <e p="GameplayScreen" t="Include">
+              <e p="EnergyBarSet.cs" t="Include" />
+              <e p="FieldAndLevelSet.cs" t="Include" />
+              <e p="PadController.cs" t="Include" />
+              <e p="ProcessController.cs" t="Include" />
             </e>
-            <e p="PadController.cs" t="Include" />
-            <e p="ProcessController.cs" t="Include" />
+            <e p="LoseScreen" t="Include">
+              <e p="FlareRotate.cs" t="Include" />
+              <e p="LoseButtons.cs" t="Include" />
+            </e>
           </e>
           <e p="MainMenu" t="Include">
-            <e p="CameraSwipe.cs" t="Include" />
-            <e p="FieldsController.cs" t="Include" />
             <e p="LevelsScreenScripts" t="Include">
               <e p="CheckLevelForActive.cs" t="Include" />
-              <e p="LevelChooseController.cs" t="Include" />
+              <e p="LevelChooseControl.cs" t="Include" />
               <e p="LevelsStarShow.cs" t="Include" />
             </e>
+            <e p="MainScreen" t="Include">
+              <e p="FieldsController.cs" t="Include" />
+              <e p="LogoStarsStart.cs" t="Include" />
+            </e>
+            <e p="ScreensMove.cs" t="Include" />
             <e p="Settings" t="Include">
-              <e p="ButtonController.cs" t="Include" />
+              <e p="SettingsButtons.cs" t="Include" />
+            </e>
+            <e p="TutorialScreen" t="Include">
+              <e p="TutorialButtons.cs" t="Include" />
             </e>
           </e>
-          <e p="SaveData.cs" t="Include" />
-          <e p="Test.cs" t="Include" />
+          <e p="PauseButtons.cs" t="Include" />
+          <e p="ProgressData.cs" t="Include" />
+          <e p="SessionData.cs" t="Include" />
           <e p="Win" t="Include">
             <e p="ButtonsController.cs" t="Include" />
+            <e p="FlareRotation.cs" t="Include" />
             <e p="WinMoneyAndStarController.cs" t="Include" />
           </e>
         </e>
@@ -111,6 +122,9 @@
           <e p="Sprites" t="Include">
             <e p="EmojiOne Attribution.txt" t="Include" />
           </e>
+        </e>
+        <e p="UnityAds" t="Include">
+          <e p="link.xml" t="Include" />
         </e>
       </e>
       <e p="Light The Runes.sln" t="IncludeFlat" />

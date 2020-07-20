@@ -5,7 +5,8 @@ using UnityEngine;
 
 public class WinMoneyAndStarController : MonoBehaviour
 {
-    private SaveData _saveData;
+    private SessionData _sessionData;
+    private ProgressData _progressData;
     private Functions _functions;
 
     public TextMeshProUGUI winMoney;
@@ -15,14 +16,15 @@ public class WinMoneyAndStarController : MonoBehaviour
 
     private void Start()
     {
-        _saveData = FindObjectOfType<SaveData>();
+        _sessionData = FindObjectOfType<SessionData>();
+        _progressData = FindObjectOfType<ProgressData>();
         _functions = FindObjectOfType<Functions>();
 
-        _winMoney = _saveData.save.winMoney;
+        _winMoney = _sessionData.sessionSave.winMoney;
         winMoney.text = _winMoney.ToString();
-        _saveData.save.money += _winMoney;
+        _progressData.progressSave.money += _winMoney;
 
-        for (var i = 0; i < _saveData.save.levelStar[_saveData.save.currentLevel]; i++)
+        for (var i = 0; i < _progressData.progressSave.levelStar[_progressData.progressSave.currentLevel]; i++)
         {
             stars[i].sprite = starOn;
         }

@@ -15,9 +15,9 @@ public class DoubleCoinAds : MonoBehaviour
     private const string GameId = "3556618";
 #endif
     
-    private SaveData _saveData;
-    private Functions _functions;
-    
+    private SessionData _sessionData;
+    private ProgressData _progressData;
+
     public TextMeshProUGUI winMoney;
     public Button doubleCoin;
 
@@ -25,14 +25,14 @@ public class DoubleCoinAds : MonoBehaviour
     {
         if(isSupported)
             Initialize(GameId, false);
-        _saveData = FindObjectOfType<SaveData>();
-        _functions = FindObjectOfType<Functions>();
+        _sessionData = FindObjectOfType<SessionData>();
+        _progressData = FindObjectOfType<ProgressData>();
     }
 
     public void DoubleCoin()
     {
         if (!IsReady("rewardedVideo")) return;
-        _saveData.save.pause = true;
+        _sessionData.sessionSave.pause = true;
         var options = new ShowAdCallbacks {finishCallback = DoubleCoinShowResult};
         if (GetPlacementContent("rewardedVideo") is ShowAdPlacementContent ad) 
             ad.Show(options);
@@ -42,12 +42,12 @@ public class DoubleCoinAds : MonoBehaviour
     {
         if (result == ShowResult.Finished)
         {
-            _saveData.save.money += _saveData.save.winMoney;
-            winMoney.text = (_saveData.save.winMoney * 2).ToString();
+            _progressData.progressSave.money += _sessionData.sessionSave.winMoney;
+            winMoney.text = (_sessionData.sessionSave.winMoney * 2).ToString();
             doubleCoin.interactable = false;
         }
         else if (result == ShowResult.Skipped) {}
         else if (result == ShowResult.Failed) {}
-        _saveData.save.pause = false;
+        _sessionData.sessionSave.pause = false;
     }
 }

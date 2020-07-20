@@ -8,14 +8,14 @@ namespace Win
 {
     public class ButtonsController : MonoBehaviour
     {
-        private SaveData _saveData;
+        private ProgressData _progressData;
         private Functions _functions;
 
         public Button next;
 
         private void Start()
         {
-            _saveData = FindObjectOfType<SaveData>();
+            _progressData = FindObjectOfType<ProgressData>();
             _functions = FindObjectOfType<Functions>();
         }
 
@@ -26,9 +26,9 @@ namespace Win
 
         public void Restart()
         {
-            if (_saveData.save.energy > 0)
+            if (_progressData.progressSave.energy > 0)
             {
-                _saveData.save.energy--;
+                _progressData.progressSave.energy--;
                 _functions.ToScene("gameplay");
             }
             else
@@ -39,10 +39,10 @@ namespace Win
 
         public void Next()
         {
-            if (_saveData.save.energy > 0)
+            if (_progressData.progressSave.energy > 0)
             {
-                _saveData.save.energy--;
-                _saveData.save.currentLevel += 1;
+                _progressData.progressSave.energy--;
+                _progressData.progressSave.currentLevel += 1;
                 _functions.ToScene("Gameplay");
             }
             else

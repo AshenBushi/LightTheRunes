@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class LevelsStarShow : MonoBehaviour
 {
-    private SaveData _saveData;
+    private ProgressData _progressData;
     private Functions _functions;
     
     public GameObject[] levels;
@@ -14,12 +14,12 @@ public class LevelsStarShow : MonoBehaviour
     private int _sum = 0;
     private void Start()
     {
-        _saveData = FindObjectOfType<SaveData>();
+        _progressData = FindObjectOfType<ProgressData>();
         _functions = FindObjectOfType<Functions>();
         
         for (var i = 0; i < 20; i++)
         {
-            _sum += _saveData.save.levelStar[int.Parse(levels[i].name)];
+            _sum += _progressData.progressSave.levelStar[int.Parse(levels[i].name)];
         }
         if(_sum >= 10)
             fake.SetActive(false);

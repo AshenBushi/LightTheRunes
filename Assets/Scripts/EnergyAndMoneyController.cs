@@ -7,7 +7,7 @@ using UnityEngine.Serialization;
 
 public class EnergyAndMoneyController : MonoBehaviour
 {
-    private SaveData _saveData;
+    private ProgressData _progressData;
     private Functions _functions;
     
     public TextMeshProUGUI energy;
@@ -19,37 +19,37 @@ public class EnergyAndMoneyController : MonoBehaviour
 
     private void Start()
     {
-        _saveData = FindObjectOfType<SaveData>();
+        _progressData = FindObjectOfType<ProgressData>();
         _functions = FindObjectOfType<Functions>();
         
-        _energy = _saveData.save.energy;
-        _money = _saveData.save.money;
+        _energy = _progressData.progressSave.energy;
+        _money = _progressData.progressSave.money;
         energy.text = _energy.ToString();
         money.text = _money.ToString();
     }
     
     private void FixedUpdate()
     {
-        money.text = _saveData.save.money.ToString();
+        money.text = _progressData.progressSave.money.ToString();
         energy.text = _energy.ToString();
         EnergyTimer();
     }
     
     private void SaveData()
     {
-        _saveData.save.energy = _energy;
-        _saveData.save.energySave = _energySave;
-        _saveData.save.energyTimer = _energyTimer;
-        _saveData.SetDateTime(DateTime.UtcNow);
+        _progressData.progressSave.energy = _energy;
+        _progressData.progressSave.energySave = _energySave;
+        _progressData.progressSave.energyTimer = _energyTimer;
+        _progressData.SetDateTime(DateTime.UtcNow);
     }
 
     private void LoadData()
     {
-        _energyTimer = _saveData.save.energyTimer;
+        _energyTimer = _progressData.progressSave.energyTimer;
         if (_energyTimer < 0)
             _energyTimer = 0;
-        _energy = _saveData.save.energy;
-        _energySave = _saveData.save.energySave;
+        _energy = _progressData.progressSave.energy;
+        _energySave = _progressData.progressSave.energySave;
     }
 
     private int _energyTimer, _energyToRespond, _energySave;
@@ -61,9 +61,9 @@ public class EnergyAndMoneyController : MonoBehaviour
         
         if (_energyToRespond <= 0)
         {
-            _saveData.save.energySave = 0;
-            _saveData.save.energyTimer = 0;
-            _saveData.SetDateTime(DateTime.UtcNow);
+            _progressData.progressSave.energySave = 0;
+            _progressData.progressSave.energyTimer = 0;
+            _progressData.SetDateTime(DateTime.UtcNow);
             fake.SetActive(true);
             secondsTimer.text = 0.ToString();
             minuteTimer.text = "0";
@@ -73,7 +73,7 @@ public class EnergyAndMoneyController : MonoBehaviour
         _energyTimer += 120 * (_energyToRespond - _energySave);
         _energySave = _energyToRespond;
 
-        var secondsPassed = (int) (DateTime.UtcNow - (_saveData.GetDateTime(DateTime.UtcNow))).TotalSeconds;
+        var secondsPassed = (int) (DateTime.UtcNow - (_progressData.GetDateTime(DateTime.UtcNow))).TotalSeconds;
 
         if (_energyTimer >= 0)
         {

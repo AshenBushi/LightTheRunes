@@ -1,7 +1,7 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 using UnityEngine.Monetization;
 using UnityEngine.UI;
-using static UnityEngine.Monetization.Monetization;
 using ShowResult = UnityEngine.Monetization.ShowResult;
 
 namespace Gameplay
@@ -15,41 +15,47 @@ namespace Gameplay
         private const string GameId = "3556618";
 #endif
     
-        private SaveData _saveData;
+        private SessionData _sessionData;
         private Functions _functions;
         
         public Slider energyBar;
-        public Transform mainCamera;
+        public GameObject gameplayScreen;
+        public GameObject loseScreen;
         public Button continuePlay;
     
         private void Start()
         {
-            if(isSupported)
-                Initialize(GameId, false);
-            _saveData = FindObjectOfType<SaveData>();
+            if(Monetization.isSupported) Monetization.Initialize(GameId, false);
+            _sessionData = FindObjectOfType<SessionData>();
             _functions = FindObjectOfType<Functions>();
         }
 
         public void Continue()
         {
-            if (!IsReady("rewardedVideo")) return;
-            _saveData.save.pause = true;
+            if (!Monetization.IsReady("rewardedVideo")) return;
+            _sessionData.sessionSave.pause = true;
             var options = new ShowAdCallbacks {finishCallback = ContinueShowResult};
-            if (GetPlacementContent("rewardedVideo") is ShowAdPlacementContent ad) 
+            if (Monetization.GetPlacementContent("rewardedVideo") is ShowAdPlacementContent ad) 
                 ad.Show(options);
         }
 
         private void ContinueShowResult(ShowResult result)
         {
-            if (result == ShowResult.Finished)
+            switch (result)
             {
-                energyBar.value = energyBar.maxValue / 2;
-                mainCamera.position = new Vector3(0f, 0f, -10f);
-                continuePlay.interactable = false;
+                case ShowResult.Finished:
+                    energyBar.value = energyBar.maxValue / 2;
+                    gameplayScreen.SetActive(true);
+                    loseScreen.SetActive(false);
+                    continuePlay.interactable = false;
+                    break;
+                case ShowResult.Skipped:
+                    break;
+                case ShowResult.Failed:
+                    break;
             }
-            else if (result == ShowResult.Skipped) {}
-            else if (result == ShowResult.Failed) {}
-            _saveData.save.pause = false;
+
+            _sessionData.sessionSave.pause = false;
         }
     }
 }

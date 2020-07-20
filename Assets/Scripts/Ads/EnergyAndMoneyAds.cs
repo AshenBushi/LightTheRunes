@@ -15,7 +15,8 @@ public class EnergyAndMoneyAds : MonoBehaviour
     private const string GameId = "3556618";
 #endif
     
-    private SaveData _saveData;
+    private SessionData _sessionData;
+    private ProgressData _progressData;
     private Functions _functions;
 
     public GameObject energyAdPanel;
@@ -24,27 +25,28 @@ public class EnergyAndMoneyAds : MonoBehaviour
     {
         if(isSupported)
             Initialize(GameId, false);
-        _saveData = FindObjectOfType<SaveData>();
+        _sessionData = FindObjectOfType<SessionData>();
+        _progressData = FindObjectOfType<ProgressData>();
         _functions = FindObjectOfType<Functions>();
     }
 
     public void OpenEnergyPanel()
     {
-        _saveData.save.pause = true;
+        _sessionData.sessionSave.pause = true;
         energyAdPanel.SetActive(true);
     }
     
     public void Exit()
     {
-        _saveData.save.pause = false;
+        _sessionData.sessionSave.pause = false;
         energyAdPanel.SetActive(false);
     }
     
     public void AdEnergy()
     {
-        if (_saveData.save.energy >= 30) return;
+        if (_progressData.progressSave.energy >= 30) return;
         if (!IsReady("rewardedVideo")) return;
-        _saveData.save.pause = true;
+        _sessionData.sessionSave.pause = true;
         var options = new ShowAdCallbacks {finishCallback = EnergyShowResult};
         if (GetPlacementContent("rewardedVideo") is ShowAdPlacementContent ad) 
             ad.Show(options);
@@ -52,27 +54,31 @@ public class EnergyAndMoneyAds : MonoBehaviour
 
     private void EnergyShowResult(ShowResult result)
     {
-        if (result == ShowResult.Finished && _saveData.save.energy <= 25)
-            _saveData.save.energy += 5;
-        else 
-        if (result == ShowResult.Finished)
-            _saveData.save.energy = 30;
-        else 
-        if (result == ShowResult.Skipped) {}
-        else
-        if (result == ShowResult.Failed) {}
-        _saveData.save.pause = false;
+        switch (result)
+        {
+            case ShowResult.Finished when _progressData.progressSave.energy <= 25:
+                _progressData.progressSave.energy += 5;
+                break;
+            case ShowResult.Finished:
+                _progressData.progressSave.energy = 30;
+                break;
+            case ShowResult.Skipped:
+                break;
+            case ShowResult.Failed:
+                break;
+        }
+        _sessionData.sessionSave.pause = false;
         energyAdPanel.SetActive(false);
     }
 
     public void BuyEnergy()
     {
-        if (_saveData.save.money < 200 || _saveData.save.energy >= 30) return;
-        _saveData.save.money -= 200;
-        if(_saveData.save.energy <= 20)
-            _saveData.save.energy += 10;
+        if (_progressData.progressSave.money < 200 || _progressData.progressSave.energy >= 30) return;
+        _progressData.progressSave.money -= 200;
+        if(_progressData.progressSave.energy <= 20)
+            _progressData.progressSave.energy += 10;
         else
-            _saveData.save.energy = 30;
+            _progressData.progressSave.energy = 30;
         
         energyAdPanel.SetActive(false);
     }
@@ -80,7 +86,7 @@ public class EnergyAndMoneyAds : MonoBehaviour
     public void AddMoney()
     {
         if (!IsReady("rewardedVideo")) return;
-        _saveData.save.pause = true;
+        _sessionData.sessionSave.pause = true;
         var options = new ShowAdCallbacks {finishCallback = MoneyShowResult};
         if (GetPlacementContent("rewardedVideo") is ShowAdPlacementContent ad) 
             ad.Show(options);
@@ -88,12 +94,17 @@ public class EnergyAndMoneyAds : MonoBehaviour
 
     private void MoneyShowResult(ShowResult result)
     {
-        if (result == ShowResult.Finished)
-            _saveData.save.money += 100;
-        else 
-        if (result == ShowResult.Skipped) {}
-        else
-        if (result == ShowResult.Failed) {}
-        _saveData.save.pause = false;
+        switch (result)
+        {
+            case ShowResult.Finished:
+                _progressData.progressSave.money += 100;
+                break;
+            case ShowResult.Skipped:
+                break;
+            case ShowResult.Failed:
+                break;
+        }
+
+        _sessionData.sessionSave.pause = false;
     }
 }

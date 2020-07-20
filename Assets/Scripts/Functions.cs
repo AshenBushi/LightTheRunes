@@ -5,32 +5,35 @@ using System.Numerics;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using Random = UnityEngine.Random;
-using Vector2 = UnityEngine.Vector2;
+using Vector3 = UnityEngine.Vector3;
 
 public class Functions : MonoBehaviour
 {
-    private SaveData _saveData;
+    private ProgressData _progressData;
+    private SessionData _sessionData;
     public GameObject getEnergy;
 
     private void Start()
     {
-        _saveData = FindObjectOfType<SaveData>();
+        _progressData = FindObjectOfType<ProgressData>();
+        _sessionData = FindObjectOfType<SessionData>();
     }
 
     public void ToScene(string scene)
     {
-        _saveData.Save();
+        _progressData.Save();
+        _sessionData.Save();
         SceneManager.LoadScene(scene);
     }
 
-    public static void MoveTo(GameObject obj, Vector2 target, float speed)
+    public static void MoveTo(GameObject obj, Vector3 target, float speed)
     {
-        obj.transform.position = Vector2.MoveTowards(obj.transform.position, target, speed * Time.deltaTime);
+        obj.transform.position = Vector3.MoveTowards(obj.transform.position, target, speed * Time.deltaTime);
     }
 
     public void EmptyEnergy()
     {
-        _saveData.save.pause = true;
+        _sessionData.sessionSave.pause = true;
         getEnergy.SetActive(true);
     }
     
