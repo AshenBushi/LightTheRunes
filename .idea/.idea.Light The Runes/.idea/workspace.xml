@@ -1,112 +1,68 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5c9318ff-3e27-4e55-aebc-d8a9970f91b2" name="Default Changelist" comment="" />
+    <list default="true" id="b819c38c-004c-4786-9d7b-a2adf1e753ad" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="DatabaseView">
-    <option name="SHOW_INTERMEDIATE" value="true" />
-    <option name="GROUP_DATA_SOURCES" value="true" />
-    <option name="GROUP_SCHEMA" value="true" />
-    <option name="GROUP_CONTENTS" value="false" />
-    <option name="SORT_POSITIONED" value="false" />
-    <option name="SHOW_EMPTY_GROUPS" value="false" />
-    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
-    <option name="HIDDEN_KINDS">
-      <set />
-    </option>
-    <expand />
-    <select />
-  </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/Light_The_Runes" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/MainMenu/TutorialScreen/TutorialButtons.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/MainMenu/LevelsScreenScripts/LevelChooseControl.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../../Game/Assets/Scripts/Gameplay/PadController.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/MainMenu/MainScreen/FieldsController.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Win/ButtonsController.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/ProgressData.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/ProgressSave.json" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Win/WinMoneyAndStarController.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Ads/DoubleCoinAds.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Ads/EnergyAndMoneyAds.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Ads/ContinueAds.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Functions.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Gameplay/LoseScreen/FlareRotate.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/MainMenu/MainScreen/LogoStarsStart.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/EnergyAndMoneyController.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../2019.3.13f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/UI/Core/Button.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Gameplay/LoseScreen/LoseButtons.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/MainMenu/Settings/SettingsButtons.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/MainMenu/LevelsScreenScripts/LevelsStarShow.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/MainMenu/LevelsScreenScripts/CheckLevelForActive.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/SessionData.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Win/FlareRotation.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PauseButtons.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/ShopData.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@2.0.1/Scripts/Runtime/TMPro_UGUI_Private.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/ProgressData.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Gameplay/GameplayScreen/Items.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Gameplay/GameplayScreen/PadController.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$USER_HOME$/Downloads/SwipeDetector.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Gameplay/GameplayScreen/ProcessController.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/MainMenu/ScreensMove.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Gameplay/GameplayScreen/EnergyBarSet.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Gameplay/GameplayScreen/FieldAndLevelSet.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$USER_HOME$/Downloads/SwipeController.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PauseButtons.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/MainMenu/TutorialScreen/TutorialButtons.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/SessionData.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/MainMenu/MainScreen/FieldsController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Gameplay/GameplayScreen/ProcessController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Gameplay/GameplayScreen/EnergyBarSet.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/SoundsManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Ads/EnergyAndMoneyAds.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/MainMenu/Settings/SettingsButtons.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Ads/ContinueAds.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/MainMenu/ScreensMove.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Lean/Localization/Scripts/LeanLocalization.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Ads/DoubleCoinAds.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Lean/Localization/Scripts/LeanLanguageCSV.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/MainMenu/LevelsStarShow.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/MainMenu/FieldsController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/MainMenu/CameraSwipe.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/MainMenu/LevelsScreenScripts/LevelChooseController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/SaveData.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/MainMenu/LevelsScreenScripts/CheckLevelForActive.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/MainMenu/LevelsScreenScripts/LevelsStarShow.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/SessionDate.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Ads/EnergyAndMoneyAds.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Gameplay/EnergyBarSet.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Gameplay/FieldAndLevelSet.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Gameplay/PadController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Win/ButtonsController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Win/WinMoneyAndStarController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/MainMenu/Settings/ButtonController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Gameplay/LoseAndPauseScreen/ButtonsController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Gameplay/LoseAndPauseScreen/PauseButtons.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Gameplay/PauseButtons.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/EnergyAndMoneyController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/MainMenu/Settings/SettingsButton.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Gameplay/ProcessController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Gameplay/LoseScreen/LoseButtons.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Functions.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/ProgressData.cs" />
-        <option value="$PROJECT_DIR$/Assets/ProgressSave.json" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Gameplay/LoseScreen/FlareRotate.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/MainMenu/MainScreen/StarsStart.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/MainMenu/MainScreen/LogoStarsStart.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Gameplay/GameplayScreen/PadController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/MainMenu/TutorialScreen/TutorialSwipe.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Gameplay/GameplayScreen/FieldAndLevelSet.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Gameplay/GameplayScreen/ProcessController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Win/FlareRotation.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/MainMenu/ScreensMove.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/MainMenu/MainScreen/FieldsController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/MainMenu/Settings/SettingsButtons.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/MainMenu/LevelsScreenScripts/LevelChooseControl.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Ads/DoubleCoinAds.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/SocialController.cs" />
+        <option value="$PROJECT_DIR$/Assets/SimpleLocalization/LocalizationSync.cs" />
+        <option value="$PROJECT_DIR$/Assets/SimpleLocalization/LocalizedText.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Localization.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SessionData.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/PauseButtons.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/FacebookManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Gameplay/GameplayScreen/FieldAndLevelSet.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ShopData.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Functions.cs" />
+        <option value="$PROJECT_DIR$/Assets/Lean/Localization/CSV/Russian.txt" />
+        <option value="$PROJECT_DIR$/Assets/Lean/Localization/CSV/English.txt" />
         <option value="$PROJECT_DIR$/Assets/Scripts/MainMenu/TutorialScreen/TutorialButtons.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Gameplay/GameplayScreen/ProcessController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Ads/EnergyAndMoneyAds.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/MainMenu/MainScreen/FieldsController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/SoundManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/SoundsButtons.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/MainMenu/Settings/SettingsButtons.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/SoundsManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PauseButtons.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Ads/ContinueAds.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Gameplay/GameplayScreen/Items.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Gameplay/GameplayScreen/PadController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Gameplay/GameplayScreen/EnergyBarSet.cs" />
       </list>
     </option>
   </component>
-  <component name="ProjectId" id="1eRUUwOHxX17jbO2odk9h2Ne5MA" />
+  <component name="ProjectId" id="1ey7ftFHicZKQOrhWR9Q5KUH4Uq" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -119,7 +75,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="TWShift.3" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="settings.editor.selected.configurable" value="preferences.editor" />
   </component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
@@ -140,29 +96,21 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="5c9318ff-3e27-4e55-aebc-d8a9970f91b2" name="Default Changelist" comment="" />
-      <created>1594283918192</created>
+      <changelist id="b819c38c-004c-4786-9d7b-a2adf1e753ad" name="Default Changelist" comment="" />
+      <created>1595282085472</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1594283918192</updated>
-      <workItem from="1594283921919" duration="1467000" />
-      <workItem from="1594293178912" duration="16243000" />
-      <workItem from="1594318877293" duration="892000" />
-      <workItem from="1594370696958" duration="10192000" />
-      <workItem from="1594387958682" duration="1412000" />
-      <workItem from="1594535496506" duration="414000" />
-      <workItem from="1594546797509" duration="11000" />
-      <workItem from="1594622771721" duration="885000" />
-      <workItem from="1594643064951" duration="7010000" />
-      <workItem from="1594720948242" duration="8301000" />
-      <workItem from="1594733582892" duration="2185000" />
-      <workItem from="1594804482045" duration="9809000" />
-      <workItem from="1594895258403" duration="15655000" />
-      <workItem from="1594985576258" duration="10877000" />
-      <workItem from="1595135297322" duration="3166000" />
-      <workItem from="1595144991082" duration="852000" />
-      <workItem from="1595243357744" duration="915000" />
-      <workItem from="1595244459624" duration="200000" />
+      <updated>1595282085472</updated>
+      <workItem from="1595282091618" duration="838000" />
+      <workItem from="1595334007475" duration="6671000" />
+      <workItem from="1595656878041" duration="6488000" />
+      <workItem from="1595674810603" duration="1771000" />
+      <workItem from="1595743340771" duration="670000" />
+      <workItem from="1595827975125" duration="7904000" />
+      <workItem from="1595861262981" duration="2909000" />
+      <workItem from="1595917764664" duration="5446000" />
+      <workItem from="1595944395973" duration="4362000" />
+      <workItem from="1596196139132" duration="1219000" />
     </task>
     <servers />
   </component>
@@ -171,31 +119,14 @@
   </component>
   <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State>
-              <option name="COLUMN_ORDER" />
-            </State>
-          </value>
-        </entry>
-      </map>
-    </option>
-  </component>
   <component name="WindowStateProjectService">
-    <state x="769" y="264" key="RiderGenerateDialog" timestamp="1594986612615">
+    <state x="419" y="310" key="#Inspection_severity" timestamp="1595675329359">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="769" y="264" key="RiderGenerateDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1594986612615" />
-    <state x="373" y="166" width="998" height="708" key="SettingsEditor" timestamp="1594622948269">
+    <state x="419" y="310" key="#Inspection_severity/0.0.1920.1040@0.0.1920.1040" timestamp="1595675329359" />
+    <state x="490" y="361" width="672" height="678" key="search.everywhere.popup" timestamp="1596196257183">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="373" y="166" width="998" height="708" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1594622948269" />
-    <state x="616" y="173" width="672" height="676" key="search.everywhere.popup" timestamp="1594910089194">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="616" y="173" width="672" height="676" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1594910089194" />
+    <state x="490" y="361" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1596196257183" />
   </component>
 </project>

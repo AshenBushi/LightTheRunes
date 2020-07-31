@@ -627,6 +627,7 @@ GameObject:
   - component: {fileID: 349399647}
   - component: {fileID: 349399646}
   - component: {fileID: 349399645}
+  - component: {fileID: 349399648}
   m_Layer: 5
   m_Name: Next
   m_TagString: Untagged
@@ -745,6 +746,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 349399643}
   m_CullTransparentMesh: 0
+--- !u!114 &349399648
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 349399643}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b28f7e33d1e3e0408d7ff2c8a92a650, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  translationName: NextImage
+  FallbackSprite: {fileID: 9032911621706245176, guid: 16299aa147d015a4ba7f811a4dedd8f4,
+    type: 3}
 --- !u!1 &388478002
 GameObject:
   m_ObjectHideFlags: 0
@@ -804,8 +820,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: +
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 95302bce965124e48bdcb839588a3d2a, type: 2}
-  m_sharedMaterial: {fileID: 4184506630709245836, guid: 95302bce965124e48bdcb839588a3d2a,
+  m_fontAsset: {fileID: 11400000, guid: 7f47d34b2167a334db19b38d7175c21f, type: 2}
+  m_sharedMaterial: {fileID: 883199252853689555, guid: 7f47d34b2167a334db19b38d7175c21f,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -1513,6 +1529,11 @@ PrefabInstance:
       propertyPath: m_textInfo.pageCount
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 777963264574531336, guid: 91045e34f45429847b0c496d0054fdce,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2117672083016146617, guid: 91045e34f45429847b0c496d0054fdce,
         type: 3}
       propertyPath: m_IsActive
@@ -1694,7 +1715,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 71208978}
-        m_MethodName: DoubleCoin
+        m_MethodName: ShowRewardedVideo
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1826,6 +1847,75 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6185ebffea726fb4d8a2b888e33a81b7, type: 3}
+--- !u!1001 &1462310349
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 8596758644175709413, guid: d341db2a6ce7bc74d880a96a517ced00,
+        type: 3}
+      propertyPath: m_Name
+      value: Localization
+      objectReference: {fileID: 0}
+    - target: {fileID: 8596758644175709415, guid: d341db2a6ce7bc74d880a96a517ced00,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 52.840717
+      objectReference: {fileID: 0}
+    - target: {fileID: 8596758644175709415, guid: d341db2a6ce7bc74d880a96a517ced00,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 182.81316
+      objectReference: {fileID: 0}
+    - target: {fileID: 8596758644175709415, guid: d341db2a6ce7bc74d880a96a517ced00,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -76.9375
+      objectReference: {fileID: 0}
+    - target: {fileID: 8596758644175709415, guid: d341db2a6ce7bc74d880a96a517ced00,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8596758644175709415, guid: d341db2a6ce7bc74d880a96a517ced00,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8596758644175709415, guid: d341db2a6ce7bc74d880a96a517ced00,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8596758644175709415, guid: d341db2a6ce7bc74d880a96a517ced00,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8596758644175709415, guid: d341db2a6ce7bc74d880a96a517ced00,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8596758644175709415, guid: d341db2a6ce7bc74d880a96a517ced00,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8596758644175709415, guid: d341db2a6ce7bc74d880a96a517ced00,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8596758644175709415, guid: d341db2a6ce7bc74d880a96a517ced00,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d341db2a6ce7bc74d880a96a517ced00, type: 3}
 --- !u!1 &1669229601
 GameObject:
   m_ObjectHideFlags: 0
@@ -1993,6 +2083,7 @@ GameObject:
   - component: {fileID: 1828246445}
   - component: {fileID: 1828246447}
   - component: {fileID: 1828246446}
+  - component: {fileID: 1828246448}
   m_Layer: 0
   m_Name: Cup
   m_TagString: Untagged
@@ -2041,7 +2132,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -4712545413828872451, guid: 16299aa147d015a4ba7f811a4dedd8f4,
+  m_Sprite: {fileID: -8385736301275435667, guid: 8dab69fd422e1884ea72127ac4369ab6,
     type: 3}
   m_Type: 0
   m_PreserveAspect: 0
@@ -2060,6 +2151,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1828246444}
   m_CullTransparentMesh: 0
+--- !u!114 &1828246448
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1828246444}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b28f7e33d1e3e0408d7ff2c8a92a650, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  translationName: Victory
+  FallbackSprite: {fileID: -8385736301275435667, guid: 8dab69fd422e1884ea72127ac4369ab6,
+    type: 3}
 --- !u!1 &1973838210
 GameObject:
   m_ObjectHideFlags: 0
@@ -2118,8 +2224,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 0
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 95302bce965124e48bdcb839588a3d2a, type: 2}
-  m_sharedMaterial: {fileID: 4184506630709245836, guid: 95302bce965124e48bdcb839588a3d2a,
+  m_fontAsset: {fileID: 11400000, guid: 7f47d34b2167a334db19b38d7175c21f, type: 2}
+  m_sharedMaterial: {fileID: 883199252853689555, guid: 7f47d34b2167a334db19b38d7175c21f,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}

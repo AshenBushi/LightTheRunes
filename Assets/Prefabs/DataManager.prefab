@@ -1,0 +1,106 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1198201216662719259
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1198201216662719239}
+  - component: {fileID: 1198201216662719238}
+  - component: {fileID: 1198201216662719237}
+  - component: {fileID: 5546646691517667708}
+  - component: {fileID: 1198201216662719236}
+  m_Layer: 0
+  m_Name: DataManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 7250588514170254948, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1198201216662719239
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1198201216662719259}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 10, z: 3367.054}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1198201216662719238
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1198201216662719259}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d2bee8a0d319284a84c9ee9c6ed9ed4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  progressSave:
+    energy: 0
+    money: 0
+    energyTimer: 0
+    energySave: 0
+    sound: 0
+    music: 0
+    date: 
+    currentLevel: 0
+    levelStar: 
+    fieldPos: 0
+    levelBlockPos: 0
+--- !u!114 &1198201216662719237
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1198201216662719259}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52789eb8c6714da4997e724d8697df3f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sessionSave:
+    pause: 0
+    winMoney: 0
+    cameraPos: 0
+    magicScrollUse: 0
+--- !u!114 &5546646691517667708
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1198201216662719259}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46b9ca88c73c2914dbe46a38a146cd52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shopSave:
+    magicScroll: 0
+    manaPotion: 0
+    extraLife: 0
+--- !u!114 &1198201216662719236
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1198201216662719259}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5c562211d76e304f94e0c33ffc471a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  getEnergy: {fileID: 0}

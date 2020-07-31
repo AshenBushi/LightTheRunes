@@ -11,18 +11,21 @@ public class Functions : MonoBehaviour
 {
     private ProgressData _progressData;
     private SessionData _sessionData;
+    private ShopData _shopData;
     public GameObject getEnergy;
 
     private void Start()
     {
         _progressData = FindObjectOfType<ProgressData>();
         _sessionData = FindObjectOfType<SessionData>();
+        _shopData = FindObjectOfType<ShopData>();
     }
 
     public void ToScene(string scene)
     {
         _progressData.Save();
         _sessionData.Save();
+        _shopData.Save();
         SceneManager.LoadScene(scene);
     }
 

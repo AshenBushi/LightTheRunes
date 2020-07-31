@@ -1,12 +1,11 @@
 ﻿using System;
 using UnityEngine;
-using UnityEngine.Monetization;
+using UnityEngine.Advertisements;
 using UnityEngine.UI;
-using ShowResult = UnityEngine.Monetization.ShowResult;
 
-namespace Gameplay
+namespace Ads
 {
-    public class ContinueAds : MonoBehaviour
+    public class ContinueAds : MonoBehaviour, IUnityAdsListener
     {
 
 #if UNITY_IOS
@@ -14,37 +13,51 @@ namespace Gameplay
 #elif UNITY_ANDROID
         private const string GameId = "3556618";
 #endif
-    
+
         private SessionData _sessionData;
-        private Functions _functions;
-        
+
         public Slider energyBar;
         public GameObject gameplayScreen;
         public GameObject loseScreen;
         public Button continuePlay;
-    
+        private const string MyPlacementId = "rewardedVideo";
+
         private void Start()
         {
-            if(Monetization.isSupported) Monetization.Initialize(GameId, false);
             _sessionData = FindObjectOfType<SessionData>();
-            _functions = FindObjectOfType<Functions>();
+            Advertisement.Initialize(GameId, false);
+            Advertisement.AddListener (this);
         }
 
-        public void Continue()
+        public void ShowRewardedVideo() 
         {
-            if (!Monetization.IsReady("rewardedVideo")) return;
+            if(Advertisement.IsReady (MyPlacementId))
+                Advertisement.Show(MyPlacementId);
+        }
+
+        public void OnUnityAdsReady(string placementId)
+        {
+            if (placementId == MyPlacementId)
+            {}
+        }
+
+        public void OnUnityAdsDidError(string message)
+        {
+        }
+
+        public void OnUnityAdsDidStart(string placementId)
+        {
             _sessionData.sessionSave.pause = true;
-            var options = new ShowAdCallbacks {finishCallback = ContinueShowResult};
-            if (Monetization.GetPlacementContent("rewardedVideo") is ShowAdPlacementContent ad) 
-                ad.Show(options);
         }
 
-        private void ContinueShowResult(ShowResult result)
+        public void OnUnityAdsDidFinish(string placementId, UnityEngine.Advertisements.ShowResult showResult)
         {
-            switch (result)
+            
+            switch (showResult)
             {
                 case ShowResult.Finished:
                     energyBar.value = energyBar.maxValue / 2;
+                    Debug.Log(energyBar.value);
                     gameplayScreen.SetActive(true);
                     loseScreen.SetActive(false);
                     continuePlay.interactable = false;
@@ -54,7 +67,6 @@ namespace Gameplay
                 case ShowResult.Failed:
                     break;
             }
-
             _sessionData.sessionSave.pause = false;
         }
     }

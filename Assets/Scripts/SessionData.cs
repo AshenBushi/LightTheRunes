@@ -58,6 +58,7 @@ private string _path;
         sessionSave.pause = false;
         sessionSave.winMoney = 0;
         sessionSave.cameraPos = File.Exists(Path.Combine(Application.persistentDataPath, "ProgressSave.json")) ? 2 : 0;
+        sessionSave.magicScrollUse = false;
     }
 }
 
@@ -67,5 +68,6 @@ public class SeData
     public bool pause;
     public int winMoney;
     public int cameraPos;
+    public bool magicScrollUse;
 }
 

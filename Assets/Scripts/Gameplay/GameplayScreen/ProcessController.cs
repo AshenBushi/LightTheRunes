@@ -30,7 +30,7 @@ namespace Gameplay
             _sessionData.sessionSave.pause = false;
         }
 
-        private void FixedUpdate()
+        private void Update()
         {
             if (!_sessionData.sessionSave.pause)
             {

@@ -11,9 +11,6 @@ namespace Gameplay
         private ProgressData _progressData;
         private Functions _functions;
 
-        public Image[] buttons;
-        public Sprite buttonOn;
-        public Sprite buttonOff;
         public GameObject pausePanel;
 
         private void Start()
@@ -21,12 +18,6 @@ namespace Gameplay
             _sessionData = FindObjectOfType<SessionData>();
             _progressData = FindObjectOfType<ProgressData>();
             _functions = FindObjectOfType<Functions>();
-        }
-
-        private void FixedUpdate()
-        {
-            buttons[0].sprite = _progressData.progressSave.sound ? buttonOn : buttonOff;
-            buttons[1].sprite = _progressData.progressSave.music ? buttonOn : buttonOff;
         }
 
         public void Home()
@@ -58,16 +49,6 @@ namespace Gameplay
         {
             _sessionData.sessionSave.pause = true;
             pausePanel.SetActive(true);
-        }
-        
-        public void MusicChange()
-        {
-            _progressData.progressSave.music = !_progressData.progressSave.music;
-        }
-    
-        public void SoundChange()
-        {
-            _progressData.progressSave.sound = !_progressData.progressSave.sound;
         }
     }
 }
