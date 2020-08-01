@@ -60,6 +60,7 @@ namespace Gameplay
         private void WinMenu()
         {
             int whatLevel;
+            var currentLevel = _progressData.progressSave.currentLevel;
             if (_progressData.progressSave.currentLevel <= 20)
                 whatLevel = 0;
             else if (_progressData.progressSave.currentLevel <= 41)
@@ -68,7 +69,7 @@ namespace Gameplay
                 whatLevel = 2;
             _money = 0;
 
-            switch (_progressData.progressSave.currentLevel)
+            switch (currentLevel)
             {
                 case 20:
                     _currentStars = 0;
@@ -80,7 +81,7 @@ namespace Gameplay
                     _currentStars = 0;
                     break;
                 default:
-                    _currentStars = _progressData.progressSave.levelStar[_progressData.progressSave.currentLevel];
+                    _currentStars = _progressData.progressSave.levelStar[currentLevel];
                     break;
             }
             
@@ -88,20 +89,20 @@ namespace Gameplay
             {
                 for(var i = _currentStars; i < 3; i++)
                     _money += _reward[whatLevel];
-                _progressData.progressSave.levelStar[_progressData.progressSave.currentLevel] = 3;
+                _progressData.progressSave.levelStar[currentLevel] = 3;
             }
             else
                 if(_value >= energyBar.maxValue * 0.4)
                 {
                     for(var i = _currentStars; i < 2; i++)
                         _money += _reward[whatLevel];
-                    _progressData.progressSave.levelStar[_progressData.progressSave.currentLevel] = 2;
+                    _progressData.progressSave.levelStar[currentLevel] = 2;
                 }
                 else
                 {
                     for(var i = _currentStars; i < 1; i++)
                         _money += _reward[whatLevel];
-                    _progressData.progressSave.levelStar[_progressData.progressSave.currentLevel] = 1;
+                    _progressData.progressSave.levelStar[currentLevel] = 1;
                 }
             
             _sessionData.sessionSave.winMoney = _money;

@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\ashen\.Rider2019.3\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\ashen\.Rider2019.3\system\resharper-host\local\Transient\ReSharperHost\v193\SolutionCaches\_Light_The_Runes.-1708906331.00" t="ExcludeRecursive" />
+    <e p="C:\Users\ashen\Desktop\Unity\Light_The_Runes" t="IncludeRecursive">
+      <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="JMO Assets" t="Include">
+          <e p="Cartoon FX" t="Include">
+            <e p="CartoonFX Free.txt" t="Include" />
+            <e p="Demo" t="Include">
+              <e p="Assets" t="Include">
+                <e p="CFX_AutoStopLoopedEffect.cs" t="Include" />
+                <e p="CFX_Demo_New.cs" t="Include" />
+                <e p="CFX_Demo_RandomDir.cs" t="Include" />
+                <e p="CFX_Demo_RandomDirectionTranslate.cs" t="Include" />
+                <e p="CFX_Demo_RotateCamera.cs" t="Include" />
+                <e p="CFX_Demo_Translate.cs" t="Include" />
+              </e>
+            </e>
+            <e p="Scripts" t="Include">
+              <e p="CFX_AutoDestructShuriken.cs" t="Include" />
+              <e p="CFX_AutoRotate.cs" t="Include" />
+              <e p="CFX_LightFlicker.cs" t="Include" />
+              <e p="CFX_LightIntensityFade.cs" t="Include" />
+            </e>
+            <e p="Shaders" t="Include">
+              <e p="CFX3 Multiply Color.shader" t="Include" />
+              <e p="CFXM_MobileParticleAdd_Alpha8.shader" t="Include" />
+            </e>
+          </e>
+          <e p="Cartoon FX Easy Editor" t="Include">
+            <e p="CartoonFX Easy Editor Readme.txt" t="Include" />
+            <e p="Editor" t="Include">
+              <e p="CFXEasyEditor.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Lean" t="Include">
+          <e p="Common" t="Include">
+            <e p="Documentation" t="Include">
+              <e p="LeanGuide.cs" t="Include" />
+            </e>
+            <e p="Examples" t="Include">
+              <e p="Fonts" t="Include">
+                <e p="OFL.txt" t="Include" />
+              </e>
+              <e p="Scripts" t="Include">
+                <e p="LeanLinkTo.cs" t="Include" />
+                <e p="LeanUpgradeEventSystem.cs" t="Include" />
+              </e>
+              <e p="Shaders" t="Include">
+                <e p="Alpha.shader" t="Include" />
+                <e p="Object.shader" t="Include" />
+                <e p="Skybox.shader" t="Include" />
+              </e>
+            </e>
+            <e p="LeanCommon.asmdef" t="Include" />
+            <e p="Scripts" t="Include">
+              <e p="LeanHelper.cs" t="Include" />
+              <e p="LeanInput.cs" t="Include" />
+              <e p="LeanInspector.cs" t="Include" />
+            </e>
+          </e>
+          <e p="Localization" t="Include">
+            <e p="CSV" t="Include">
+              <e p="English.txt" t="Include" />
+              <e p="Russian.txt" t="Include" />
+            </e>
+            <e p="Examples" t="Include">
+              <e p="Media" t="Include">
+                <e p="English.txt" t="Include" />
+                <e p="Japanese.txt" t="Include" />
+                <e p="Spanish.txt" t="Include" />
+              </e>
+            </e>
+            <e p="LeanLocalization.asmdef" t="Include" />
+            <e p="Scripts" t="Include">
+              <e p="Behaviours" t="Include">
+                <e p="LeanLocalizedAudioSource.cs" t="Include" />
+                <e p="LeanLocalizedDropdown.cs" t="Include" />
+                <e p="LeanLocalizedImage.cs" t="Include" />
+                <e p="LeanLocalizedRenderer.cs" t="Include" />
+                <e p="LeanLocalizedSpriteRenderer.cs" t="Include" />
+                <e p="LeanLocalizedText.cs" t="Include" />
+                <e p="LeanLocalizedTextFont.cs" t="Include" />
+                <e p="LeanLocalizedTextMesh.cs" t="Include" />
+                <e p="LeanLocalizedTextMeshFont.cs" t="Include" />
+                <e p="TMP" t="Include">
+                  <e p="LeanLocalization.TMP.asmdef" t="Include" />
+                  <e p="LeanLocalizedTextMeshPro.cs" t="Include" />
+                  <e p="LeanLocalizedTextMeshProFont.cs" t="Include" />
+                  <e p="LeanLocalizedTextMeshProUGUI.cs" t="Include" />
+                  <e p="LeanLocalizedTextMeshProUGUIFont.cs" t="Include" />
+                  <e p="LeanLocalizedTMP_Dropdown.cs" t="Include" />
+                </e>
+              </e>
+              <e p="ILocalizationHandler.cs" t="Include" />
+              <e p="LeanLanguage.cs" t="Include" />
+              <e p="LeanLanguageCSV.cs" t="Include" />
+              <e p="LeanLanguageNameAttribute.cs" t="Include" />
+              <e p="LeanLocalization.cs" t="Include" />
+              <e p="LeanLocalizedBehaviour.cs" t="Include" />
+              <e p="LeanPhrase.cs" t="Include" />
+              <e p="LeanPrefab.cs" t="Include" />
+              <e p="LeanSource.cs" t="Include" />
+              <e p="LeanToken.cs" t="Include" />
+              <e p="LeanTranslation.cs" t="Include" />
+              <e p="LeanTranslationNameAttribute.cs" t="Include" />
+            </e>
+          </e>
+          <e p="READ ME.txt" t="Include" />
+        </e>
+        <e p="Scripts" t="Include">
+          <e p="Ads" t="Include">
+            <e p="ContinueAds.cs" t="Include" />
+            <e p="DoubleCoinAds.cs" t="Include" />
+            <e p="EnergyAndMoneyAds.cs" t="Include" />
+          </e>
+          <e p="EnergyAndMoneyController.cs" t="Include" />
+          <e p="Functions.cs" t="Include" />
+          <e p="Gameplay" t="Include">
+            <e p="GameplayScreen" t="Include">
+              <e p="EnergyBarSet.cs" t="Include" />
+              <e p="FieldAndLevelSet.cs" t="Include" />
+              <e p="Items.cs" t="Include" />
+              <e p="PadController.cs" t="Include" />
+              <e p="ProcessController.cs" t="Include" />
+            </e>
+            <e p="LoseScreen" t="Include">
+              <e p="FlareRotate.cs" t="Include" />
+              <e p="LoseButtons.cs" t="Include" />
+            </e>
+          </e>
+          <e p="MainMenu" t="Include">
+            <e p="LevelsScreenScripts" t="Include">
+              <e p="EternityLevelChecking.cs" t="Include" />
+              <e p="LevelChecking.cs" t="Include" />
+              <e p="LevelScreenManager.cs" t="Include" />
+              <e p="LevelStarsShow.cs" t="Include" />
+              <e p="MovementLevelBlocks.cs" t="Include" />
+            </e>
+            <e p="MainScreen" t="Include">
+              <e p="FieldsController.cs" t="Include" />
+              <e p="LogoStarsStart.cs" t="Include" />
+            </e>
+            <e p="ScreensMove.cs" t="Include" />
+            <e p="Settings" t="Include">
+              <e p="SettingsButtons.cs" t="Include" />
+            </e>
+            <e p="TutorialScreen" t="Include">
+              <e p="TutorialButtons.cs" t="Include" />
+            </e>
+          </e>
+          <e p="PauseButtons.cs" t="Include" />
+          <e p="ProgressData.cs" t="Include" />
+          <e p="SessionData.cs" t="Include" />
+          <e p="ShopData.cs" t="Include" />
+          <e p="SoundsManager.cs" t="Include" />
+          <e p="Win" t="Include">
+            <e p="ButtonsController.cs" t="Include" />
+            <e p="FlareRotation.cs" t="Include" />
+            <e p="WinMoneyAndStarController.cs" t="Include" />
+          </e>
+        </e>
+        <e p="TextMesh Pro" t="Include">
+          <e p="Fonts" t="Include">
+            <e p="LiberationSans - OFL.txt" t="Include" />
+          </e>
+          <e p="Resources" t="Include">
+            <e p="LineBreaking Following Characters.txt" t="Include" />
+            <e p="LineBreaking Leading Characters.txt" t="Include" />
+            <e p="Shaders" t="Include">
+              <e p="TMP_Bitmap-Custom-Atlas.shader" t="Include" />
+              <e p="TMP_Bitmap-Mobile.shader" t="Include" />
+              <e p="TMP_Bitmap.shader" t="Include" />
+              <e p="TMP_SDF Overlay.shader" t="Include" />
+              <e p="TMP_SDF-Mobile Masking.shader" t="Include" />
+              <e p="TMP_SDF-Mobile Overlay.shader" t="Include" />
+              <e p="TMP_SDF-Mobile.shader" t="Include" />
+              <e p="TMP_SDF-Surface-Mobile.shader" t="Include" />
+              <e p="TMP_SDF-Surface.shader" t="Include" />
+              <e p="TMP_SDF.shader" t="Include" />
+              <e p="TMP_Sprite.shader" t="Include" />
+              <e p="TMPro.cginc" t="Include" />
+              <e p="TMPro_Properties.cginc" t="Include" />
+              <e p="TMPro_Surface.cginc" t="Include" />
+            </e>
+          </e>
+          <e p="Sprites" t="Include">
+            <e p="EmojiOne Attribution.txt" t="Include" />
+          </e>
+        </e>
+      </e>
+      <e p="LeanCommon.csproj" t="IncludeRecursive" />
+      <e p="LeanLocalization.csproj" t="IncludeRecursive" />
+      <e p="LeanLocalization.TMP.csproj" t="IncludeRecursive" />
+      <e p="Light_The_Runes.sln" t="IncludeFlat" />
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="Packages" t="ExcludeRecursive" />
+      <e p="Temp\bin" t="ExcludeRecursive" />
+    </e>
+  </component>
+</project>
